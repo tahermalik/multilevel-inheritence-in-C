@@ -31,5 +31,5 @@ void main()
 xyz t;
 t.get();
 t.put();
-getch();
+getch();               //for laptops and PC use this line otherwise this line is not important just it reduces time to show output and those who are using online compiler dont write this line
 }
