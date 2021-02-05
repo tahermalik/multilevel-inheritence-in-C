@@ -1,0 +1,35 @@
+#include<iostream.h>
+#include<conio.h>
+class abc
+{
+public:
+int x;
+void get();
+};
+  void abc::get()
+  {
+  cout<<endl<<"enter any value :";
+  cin>>x;
+  cout<<endl<<"first number is :"<<x;
+  }
+class xyz:public abc                              //multilevel inheritence
+{
+public:
+int y,a;
+void put();
+};
+  void xyz::put()
+  {
+  cout<<endl<<"enter any value :";
+  cin>>y;
+  cout<<endl<<"second value is :"<<y;
+  a=x+y;
+  cout<<endl<<"addition of two number is :"<<a;
+  }
+void main()
+{
+xyz t;
+t.get();
+t.put();
+getch();
+}
